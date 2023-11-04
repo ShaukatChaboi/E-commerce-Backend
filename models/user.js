@@ -9,7 +9,6 @@ const User = mongoose.model(
       firstName: String,
       lastName: String,
       displayImg: String,
-      coverImg: String,
       role: { type: String, default: 'client' },
       email: {
         type: String,
@@ -30,11 +29,7 @@ const User = mongoose.model(
       },
       address: String,
       state: String,
-      zipCode: Number,
-      skype: String,
       country: String,
-      language: { type: String, default: 'en' },
-      timeZone: String,
       currency: String,
       active: { type: Boolean, default: true }, // set active to true by default
       socialAccounts: { type: Schema.Types.ObjectId, ref: 'socialAccounts' } // Reference to SocialAccounts schema
