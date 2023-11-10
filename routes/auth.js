@@ -1,5 +1,5 @@
 const authRoutes = require('express').Router()
-const { logInController, registerController, authController } = require('../../controller/auth/')
+const { logInController, registerController, authController } = require('../controller/auth')
 
 authRoutes.post('/login', logInController)
 authRoutes.post('/register', registerController)

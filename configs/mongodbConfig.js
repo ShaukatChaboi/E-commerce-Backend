@@ -10,7 +10,7 @@ const configs = {
 const connect = async () => {
   try {
     await mongoose.connect(uri)
-    for (const [key, value] of Object.entries(configs)) mongoose.set(key, value)
+
 
     console.log('Connected to DB Successfully.')
   } catch (err) {

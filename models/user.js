@@ -32,7 +32,6 @@ const User = mongoose.model(
       country: String,
       currency: String,
       active: { type: Boolean, default: true }, // set active to true by default
-      socialAccounts: { type: Schema.Types.ObjectId, ref: 'socialAccounts' } // Reference to SocialAccounts schema
     },
     { timestamps: true }
   )
